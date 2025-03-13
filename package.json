@@ -1,0 +1,38 @@
+{
+  "name": "claude-chat-context-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Claude Desktop that manages chat context across sessions",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-chat-context-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/index.js",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "claude",
+    "mcp",
+    "context",
+    "chat",
+    "memory"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.10",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
