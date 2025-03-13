@@ -98,3 +98,6 @@ ipython_config.py
 .venv
 venv/
 ENV/
+
+# Conversation files
+storage/conversations/
